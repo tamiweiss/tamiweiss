@@ -1,0 +1,5 @@
+# Dance Dance Dance like a robot.
+User-agent: *
+#Disallow: /
+User-agent: Browsershots
+Disallow:

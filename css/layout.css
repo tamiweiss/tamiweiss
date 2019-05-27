@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/* CSS Document */
+
+main#Container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 16px 16px 16px;
+	position: relative;
+	box-sizing: border-box;
+	
+}
+
+/*Main Content area */
+
+h1#Name {
+	text-indent: -9999px;
+	/*width: 471px;
+	height: 190px;*/
+	margin:  -4px auto 0;
+	position: relative;
+	z-index: 2;
+	/*-moz-perspective: 500px;
+	-webkit-perspective: 500px;
+	perspective: 500px;*/
+}
+
+h1#Name img {
+	display: block;
+	width: 471px;
+	border-bottom: none;
+	margin: auto;
+}
+
+h1#Name a {
+	display: block;
+	width: 471px;/*needed for the transform to work*/
+	border-bottom: none;
+	margin: auto;
+	-moz-transition: all .2S linear;
+	-webkit-transition: all .2S linear;
+	transition: all .2S linear;
+}
+
+h1#Name a:hover,
+h1#Name a:active,
+h1#Name a:focus {
+	border-bottom: none;
+	outline: none;
+	-moz-transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+	-moz-transform: rotate(-2deg) ;
+	-webkit-transform: rotateX(-20deg) rotateY(4deg) scaleX(.96);
+	transform: rotateX(-20deg) rotateY(4deg) scaleX(.96);
+}
+
+img#SubTitle { 
+	display: block;
+	width: 322px;
+	height: 92px;
+	text-indent: -9999px;
+	position: absolute;
+	z-index: 1;
+	top: 116px;
+	/*left: 400px;*/
+	right: 150px;
+}
+
+p#BigQuote {
+	display: block;
+	position: relative;
+	width: auto;
+	z-index: 0;
+	padding: 24px 6px;
+	/*border-width: 1px 0;
+	border-color: rgba(0,0,0,0.4);
+	border-style: solid; */
+	color: #836d74;
+	color: rgba(131,109,116,0.8);
+	font-size: 48px;
+	line-height: 120%;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba(255,255,255,.5), -1px -1px 0px rgba(9,1,4,.5);
+	font-family: 'Shadows Into Light', Helvetica, Arial, sans-serif;
+	
+}
+#MainContent p#BigQuote {
+	margin: 0;
+}
+
+#MainContent {
+	min-height: 730px;
+	height: auto;
+	width: 100%;
+	background-color: transparent;
+	background-image: url(../img/bkg/Stoney-Purple.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment:fixed;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+* html #MainContent {
+ overflow-y:auto;
+}
+
+#MainContent h2 {
+	font-size: 30px;
+	font-weight: normal;
+	margin: .5em 0;
+	font-family: 'Shadows Into Light', Helvetica, Arial, sans-serif;
+}
+
+
+#MainContent p {
+	margin: 1em;
+}
+
+
+ul#Works {
+	clear: both;
+	margin: -40px auto 12px;
+	z-index: 2;
+}
+
+ul#Works p {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 8px;
+}
+
+ul#Works p.Company,
+ul#Works p.Tools{
+	font-style: italic;
+	color: #a57484;
+	margin:0 0 2px;
+}
+
+ul#Works p.Tools {
+	margin:0 0 8px;
+}
+
+
+
+
+ul#Works > li {
+	overflow: hidden;
+	padding: 40px 0;
+	-moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, .2);
+	-webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, .2);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, .2);
+	border: 1px solid transparent;
+	border-bottom: 1px solid #010000;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+	-moz-box-shadow: inset 0 0 32px rgba(255,255,255,0), 4px 4px 6px rgba(0,0,0,0), 0px 1px 0px rgba(255, 255, 255, .2);
+	-webkit-box-shadow: inset 0 0 32px rgba(255,255,255,0), 4px 4px 6px rgba(0,0,0,0),0px 1px 0px rgba(255, 255, 255, .2);
+	box-shadow: inset 0 0 32px rgba(255,255,255,0), 4px 4px 6px rgba(0,0,0,0),0px 1px 0px rgba(255, 255, 255, .2);
+}
+
+
+
+ul#Works > li dl {
+	margin-top: 20px;
+}
+
+
+ul#Works li img {
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.7), -10px -10px 20px rgba(0,0,0,0.6);
+}
+
+ul#Works li dl dt { margin-top: 12px;}
+
+ul#Works li dl dd {
+	margin: 6px 0px 0px 0px;
+}
+
+ul#Works li dl dd img {
+	float: none;
+	background: transparent;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 0px;
+	border: 1px solid #836d74;
+}
+
+
+/*Meridian
+
+ul#Works  li#Meridian dl dd img { border: 0px;}
+*/
+
+/*Graff Faucets */
+
+ul#Works  li#GraffWeb dl.additional dd { width: 60px; float: left; margin: 6px 8px 0px 0px;}
+
+/* Funjet */
+ul#Works  li#Funjet dl dd { width: 60px; float: left; margin: 6px 8px 0px 0px;}
+
+/* SouthWest */
+ul#Works  li#SouthWest dl dd { width: 100px; float: left; margin: 6px 20px 0px 0px;}
+
+
+
+
+
+/**** Top Area *******/
+/*footer*/
+
+
+
+#AdditionalContent { 
+	position: relative;
+	z-index: 2;
+	font-size: 10pt;
+	clear:both;
+	margin: 0px;
+	padding: 12px 0 0 0;;
+	padding-top: 1em;
+	background: url(../img/bkg/bookcover.jpg) repeat-x center top;
+	background: url(../img/bkg/stitch.png) repeat-x left top, url(../img/bkg/bookcover.jpg) repeat-x center top;
+	-moz-box-shadow: -6px -4px 6px rgba(0,0,0,.4);
+	-webkit-box-shadow: -6px -4px 6px rgba(0,0,0,.4); /* for safari*/
+	-webkit-box-shadow: inset 0 0 32px rgba(255,255,255,.3), -6px -4px 6px rgba(0,0,0,.4);
+	box-shadow: inset 0 0 32px rgba(255,255,255,.3), -6px -4px 6px rgba(0,0,0,.4);
+	overflow:hidden;
+	width: auto;
+	
+}
+
+
+#AdditionalContent dt, #AdditionalContent dd {
+	display: inline;
+}
+
+
+ul#MoreInfo {
+	margin: 24px 0 24px; 
+	padding: 0;
+	padding-top: 30px;
+	margin: auto;
+	width: 960px;
+	box-sizing: border-box;
+}
+
+
+ul#MoreInfo > li {
+	display: block; 
+	float: left;
+	width: 31%;
+	box-sizing: border-box;
+	padding: 12px;
+}
+
+li#contactInfo {
+	padding: 12px;
+}
+
+
+li#contactInfo li {
+	line-height: 16px;
+	padding: 2px 4px;
+	display: block;
+	float: none;
+}
+
+#Copyright {
+	clear: both;
+	margin: auto;
+	text-align: center;
+	font-size: 12px;
+	font-style: italic;
+	opacity: .9;
+}
+
+li#FindMe {
+	border-left: 1px solid #010000;
+    border-right: 1px solid #010000;
+	box-shadow: 1px 0px 0px rgba(255, 255, 255, .2), inset 1px 0px 0px rgba(255, 255, 255, .2);
+}
+
+
+
+ul#ReNav {
+	min-height:100px;
+	display: block;
+    width: 65px;
+	margin: 20px auto;
+}
+
+
+
+/*ul#ReNav {
+	margin-top: 26px;
+	padding: 10px 6px 6px 120px;
+	border-left: 1px solid #010000;
+	border-right: 1px solid #010000;
+	box-shadow: 1px 0px 0px rgba(255, 255, 255, .2), inset 1px 0px 0px rgba(255, 255, 255, .2);
+	height: 100px;
+	width: 180px;
+}*/
+
+
+ul#ReNav li {
+	margin-left: 4px;
+	list-style-type: none;
+	font-size: 4px;	
+	display: list-item;
+	padding: 2px;
+	float: none;
+	display: list-item;
+}
+
+ul#ReNav li a {
+	font-size: 12px;	
+}
+
+ul#ReNav li:hover {padding-left: 10px;}
+
+
+dl#Stylistic {
+	float: left;
+	margin: 24px 0em 24px 12px;
+	width: 150px;
+}
+
+dl#Stylistic dt {
+	margin-right: 1em; 
+	margin-bottom: 1em;
+	color: #a57484;
+	display: block;
+}
+
+
+dd#naked {
+	padding: .25em 0;
+}
+
+dd#naked img {
+	display: inline;
+	opacity: .6;
+	margin-right: 4px;
+	border: none;
+}
+
+dd#naked:hover img {opacity:1;}
+
+#tidy {
+	padding: .25em 2em .25em .25em;
+	background: transparent url('../img/tidy.png') no-repeat right;
+
+}
+
+
+
+
+dl#Stylistic dd#ohCrap { display: none; }
+
+li#About {
+	float: left;
+	margin-left: 30px;
+	padding-top: 12px;
+}
+
+li#About h4{ font-size: 24px;}
+
+
+li#About img {
+	margin-left: 60px;
+	-moz-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);
+	-moz-transition: all .4S linear;
+	-webkit-transition: all .4S linear;
+	transition: all .4S linear;
+}
+
+li#About:hover img,
+li#About:active img,
+li#About:focus img {
+	margin:0;
+	transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+

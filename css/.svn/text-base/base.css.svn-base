@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+html { height: 100%; background: #0b0203; margin: 0; padding:0;}
+body {
+	height: 100%;
+	color: #f4dbbc;
+	font-family:  'Raleway', Helvetica, Arial, sans-serif; 
+	/*font-family: "Lucida Console", Monaco, monospace;*/
+	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+	font-size: 12px;
+	padding: 0;
+	margin:0;
+}
+
+/* not sure about this, going to try images as block */
+
+img {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	font-style: italic;
+	color: #fdb354;
+	font-family: 'Shadows Into Light', Helvetica, Arial, sans-serif;
+}
+
+p {
+	padding: 6px 4px;
+	line-height: 160%;
+}
+
+
+strong {	
+	font-weight: bold;
+	color: #ada70b;
+}
+
+em {
+	font-style: italic;
+}
+
+
+a:link, a:visited {
+	color: #fdb354;
+	text-decoration: none;
+	border-bottom: 1px dotted #fdb354;
+}
+
+a:hover, a:active {
+	color: #fdb354;
+	text-decoration: none;
+	border-bottom: 1px solid #fdb354;
+}
+
+
+dt {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size:12px;
+	color: #a57484;
+}
+
+dt:after {
+	content: ':';
+}
+
+dd {
+	font-size: 10pt;
+}
+
+pre {
+	width: 450px;
+	margin: 1em;
+	font-style: italic;
+	white-space: pre-wrap;       /* css-3 */
+ 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+   	white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	padding: 1em;
+	border: 3px dotted #884232;
+	background-color: #f4ecdc;
+	color: #884232;
+	line-height: 1.5em;
+}
+
+/*form*/
+fieldset {
+	width: 30em;
+	margin: 2em;
+}
+
+label {
+	display: block;
+	width:5em;
+	margin: 1em;
+	padding: 3px;
+	float: left;
+	clear: left;
+}
+
+
+input[type="text"] {
+	width: 20em;
+	margin: 1em;
+	padding: 3px;
+	border: 3px solid #884232;
+	background-color: #f4ecdc;
+}
+
+input[type="button"]{
+	clear: both;
+	margin-top: 1em;
+	display: block;
+	float: right;
+}
+
+textarea {
+	clear: both;
+	/*width: 36em;*/
+	height: 8em;
+	border: 3px solid #8A5106;
+	margin-left: 1em;
+	margin-top: -.75em;
+}
+
+
+
+input[type="text"]:focus, textarea:focus {
+	border: 3px dotted #8A5106;
+}
+
+
+dfn {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}

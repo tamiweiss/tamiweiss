@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*@media screen and (max-device-width: 480px) { */
+
+
+@media screen and (max-width: 899px) {
+	body {
+	
+	}
+	
+	div#MainContent {
+		background-size: 140%;
+	}
+	main#Container {
+		width: 100%;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+		width:100%
+	}
+	/*h1#Name img {
+	width: 100%;
+	height: auto;
+}*/
+	
+	img#SubTitle { 
+	right: 1px;
+}
+
+ul#MoreInfo {
+	width:100%;
+}
+	
+
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+	
+h1#Name img {
+	width: 100%;
+	height: auto;
+}
+
+h1#Name a {
+    width: 100%; /*needed for the transform to work.*/
+}
+h1#Name a:hover,
+h1#Name a:active
+h1#Name a:focus {
+	
+}
+
+img#SubTitle { 
+	right: 1px;
+	top: 106px
+}
+
+div#MainContent {
+	background-size: 200%;
+}
+
+p#BigQuote {
+	font-size: 32px;
+	line-height: 120%;
+	padding-top: 1.6em;
+}
+
+ul#MoreInfo {
+	width: 100%;
+}
+
+ul#MoreInfo > li {
+	display: block; 
+	float: none;
+	width: 100%;
+}
+
+li#FindMe {
+	border-left: 0px solid #010000;
+    border-right: 0px solid #010000;
+	box-shadow: none,none; 
+}
+
+ul#ReNav {
+	margin-top: 26px;
+	padding: 12px;
+	border-top: 1px solid #010000;
+	border-bottom: 1px solid #010000;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+	height: auto;
+	min-height: auto;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+ul#ReNav li {
+    margin-left: 4px;
+    list-style-type: none;
+    font-size: 4px;
+    padding: 6px;
+    float: none;
+    display: inline-block;
+}
+
+
+li#About img {
+	margin-left: 60px;
+	transform: rotate(95deg);
+	transition: all .4S linear;
+	width: 100px;
+}
+
+li#About:hover img,
+li#About:active img,
+li#About:focus img {
+	margin:0;
+	transform: rotate(90deg);
+}
+
+li#About {
+   float: none;
+   margin-left: 0;
+}
+	
+	
+}
+
+@media screen and (max-width: 420px) {
+img#SubTitle { 
+	right: 1px;
+	top: 90px;
+	width: 60%;
+}
+
+p#BigQuote {
+	font-size: 28px;
+}
+
+
+	
+}
+
+@media screen and (max-width: 340px) {
+h1#Name {
+	margin-top: -16px;
+}
+	
+img#SubTitle { 
+	right: 1px;
+	top: 74px;
+	width: 60%;
+	height: auto;
+}
+
+div#MainContent {
+	background-size: 400%;
+}
+
+
+	
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*footer background color #7d5531 */
+/* main background color: #c66d6d */
+
+@import url(reset.css);
+@import url(base.css);
+@import url(layout.css);
+@import url(mobile.css);
+@import url(lightbox.css);
+
+
